@@ -19,9 +19,6 @@ dir=(dir-timedelta(days=0))
 dir=dir.strftime("%d_%b_%Y")
 dir=str(dir)
 print(dir)
-# dir=dir.split("-")
-# dir=dir[::-1]
-# dir="_".join(dir)
 
 
 os.mkdir(dir)
