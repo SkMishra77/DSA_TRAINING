@@ -20,9 +20,11 @@ dir=dir.strftime("%d_%b_%Y")
 dir=str(dir)
 print(dir)
 
-
-os.mkdir(dir)
-os.chdir(dir)
+try:
+    os.mkdir(dir)
+    os.chdir(dir)
+except:
+    os.chdir(dir)
 print("changed")
 print(os.getcwd())
 a=int(input("ENTER NUMBER OF FILES"))
